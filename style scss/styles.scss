@@ -1,3 +1,4 @@
+@import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
 @import "shop";
 @import "tourism";
@@ -13,7 +14,7 @@
 h1{
     font-size: 50px;
     line-height: 64px;
-    color: #251605;
+    color: $background;
 }
 h2{
     font-size: 46px;
@@ -23,8 +24,8 @@ h2{
 h3{
     font-size: 20px;
     line-height: 34px;
-    color: #EDD4B2;
-    background-color: #35230e;
+    color: $text;
+    background-color: $backgroundtwo;
     text-align: center;
 }
 h4{
@@ -37,7 +38,7 @@ h6{
 }
 p{
     font-size: 16px;
-    color: #251605;
+    color: $background;
     margin: 15px 0 20px 0;
 }
 .section-p1{
@@ -59,7 +60,7 @@ nav{
     justify-content: flex-end;
     height: 25vh;
     padding: 20px 80px;
-    background-color: #251605;
+    background-color: $background;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     .logo{
         width: 120px; 
@@ -73,16 +74,16 @@ nav{
     a{
         text-decoration: none;
         font-size: 16px;
-        color: #EDD4B2;
+        color: $text;
         transition: 0.3s ease;
         &:hover,
             .navbar li a.active{
-            color: #d4a07e;
+            color: $hover;
             &:hover::after{
                 content: "";
                 width: 30%;
                 height: 2px;
-                background-color: #EDD4B2;
+                background-color: $text;
                 position: absolute;
                 bottom: -4px;
                 left: 30px;
@@ -92,9 +93,9 @@ nav{
 }
 .navbar-light .navbar-nav .nav-link{
     text-decoration: none;
-    color: #EDD4B2;
+    color: $text;
     &:hover{
-        color: #d4a07e;
+        color: $hover;
     }
 }
 .main{
@@ -123,8 +124,8 @@ nav{
         display: flex;
         justify-content: center;
         padding: 20px 20px;
-        background-color: #251605;
-        color: #d4a07e;
+        background-color: $background;
+        color: $hover;
         font-size: 25px;
     }
 }
@@ -147,7 +148,7 @@ nav{
     height: 500px;
     min-width: 250px;
     padding: 10px 12px;
-    border: 1px solid #d4a07e;
+    border: 1px solid $hover;
     border-radius: 15px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -196,8 +197,8 @@ input{
     line-height: 50px;
     border-radius: 7px 7px;
     background-color: #f8e7ce;
-    color: #d4a07e;
-    border: 1px solid #EDD4B2;
+    color: $hover;
+    border: 1px solid $text;
     position: absolute;
     bottom: 20px;
     right: 10px;
@@ -210,7 +211,7 @@ input{
         height: 70vh;
     }
     h4{
-        color: #35230e;
+        color: $backgroundtwo;
         font-size: 20px;
     }
     .top{
@@ -220,7 +221,7 @@ input{
         transform: translate(-50%, -50%);
     }
     h2{
-        color: #35230e;
+        color: $backgroundtwo;
         font-weight: 100;
         padding: 10px 0;
     }
@@ -240,14 +241,14 @@ input{
         font-size: 14px;
         font-weight: 600;
         padding: 15px 30px;
-        background-color: #35230e;
+        background-color: $backgroundtwo;
         border-radius: 4px;
         cursor: pointer;
         border: none;
         outline: none;
         transition: 0.2s;
         &:hover{
-            background-color: #d4a07e;
+            background-color: $hover;
         }
         a{
             text-decoration: none;
@@ -266,23 +267,23 @@ input{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #35230e;
+    background-color: $backgroundtwo;
     h4{
         font-size: 22px;
         font-weight: 700;
-        color: #EDD4B2;
+        color: $text;
     }
     p{
         font-size: 14px;
         font-weight: 600;
-        color: #d4a07e;
+        color: $hover;
     }
 }
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    background-color: #251605;
+    background-color: $background;
     height: 40vh;
     padding: 3rem;
     section{
@@ -290,7 +291,7 @@ footer{
         grid-template-rows: fit-content;
         justify-content: left;
         text-decoration: none;
-        color: #EDD4B2;
+        color: $text;
         padding: 0 1rem;
         h5{
             margin-bottom: 1rem;
@@ -299,7 +300,7 @@ footer{
 }
 .text a{
     text-decoration: none;
-    color: #EDD4B2;
+    color: $text;
 }
 .socialmedia{
     padding: 30px auto;
@@ -340,10 +341,10 @@ footer{
         position: fixed;
         height: 11vh;
         width: 100%;
-        background-color: #35230e;
+        background-color: $backgroundtwo;
     }
     .navbar li{
-        background-color: #35230e;
+        background-color: $backgroundtwo;
     }
     .main{
         display: none;
@@ -380,12 +381,12 @@ footer{
         height: 35vh;
     }
     .banner h4{
-        color: #35230e;
+        color: $backgroundtwo;
         font-weight: 100;
         font-size: 18px;
     }
     .banner h2{
-        color: #35230e;
+        color: $backgroundtwo;
         font-size: 30px;
         font-weight: 300;
         padding: 10px 0;
@@ -397,7 +398,7 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        background-color: #251605;
+        background-color: $background;
         height: 50vh;
         padding: 3rem;
     }
@@ -441,10 +442,10 @@ footer{
         position: fixed;
         height: 11vh;
         width: 100%;
-        background-color: #35230e;
+        background-color: $backgroundtwo;
     }
     .navbar li{
-        background-color: #35230e;
+        background-color: $backgroundtwo;
     }
     .main{
         display: none;
@@ -484,12 +485,12 @@ footer{
         height: 25vh;
     }
     .banner h4{
-        color: #35230e;
+        color: $backgroundtwo;
         font-weight: 100;
         font-size: 14px;
     }
     .banner h2{
-        color: #35230e;
+        color: $backgroundtwo;
         font-size: 20px;
         font-weight: 300;
         padding: 10px 0;
@@ -500,18 +501,18 @@ footer{
     .newsletter h4{
         font-size: 18px;
         font-weight: 700;
-        color: #EDD4B2;
+        color: $text;
     }
     .newsletter p{
         font-size: 12px;
         font-weight: 600;
-        color: #d4a07e;
+        color: $hover;
     }
     footer{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        background-color: #251605;
+        background-color: $background;
         height: 70vh;
         padding: 2rem;
     }
